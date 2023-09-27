@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+    cursor: pointer;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+}
+.nav-right .user-icon {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+.menu-icon{
+    width: 30px;
+    /* margin-right: 25px; */
+    height: 25px;
+}
+.logo{
+    width: 130px;
+    height: 60px;
+    padding-left: 5px;
+}
+.mic-icon{
+    width: 16px;
+}
+.search-box{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+.search-box input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.search-box img{
+    width: 15px;
+}
+.sidebar{
+    background: white;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2.3%;
+    padding-top: 100px;
+    
+}
+.shortcut-link a img{
+    width: 20px;
+    margin-right: 20px;
+}
+.shortcut-link a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.home{
+    color: #ed3833;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 85%;
+}
+.subscribed-list h3{
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+.subscribed-list a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.subscribed-list a img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/*-------------------Main------------*/
+/* .interest{
+    display: flex;
+    align-items: center;
+    padding-left: 17%;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+.all {
+    background: black;
+    color: #fff;
+    width: fit-content;
+    padding: 8px 10px;
+    border-radius: 25%;
+}
+.all:hover{
+    cursor: pointer;
+}
+.under-10-min{
+    background: #eaeaea;
+    width: fit-content;
+    padding: 8px 10px;
+    border-radius: 10px ;
+}
+.under-10-min:hover{
+    cursor: pointer;
+    background:  #e4e3e3;
+} */
+.container{
+    background:white;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.large-container{
+    padding-left: 7%;
+
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    border-radius: 8px;
+}
+.list-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+.thumbnail{
+    width: 100%;
+    border-radius: 5px;
+
+}
+.vid-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+
+}
+.vid-list .flex-div img{
+    width: 35px ;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.vid-info a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+.small-sidebar{
+    width: 5%;
+}
+.small-sidebar a p{
+    display: none;
+}
+.small-sidebar h3{
+    display: none;
+}
+.small-sidebar hr{
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+@media(max-width: 900px){
+    .sidebar{
+        /* display: none; */
+        width: 40%;
+        left: -300px;
+        transition: left 0.5s ease;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+    }
+    .small-sidebar{
+        /* display: block; */
+        /* width: 40%; */
+        z-index: 1;
+        left: 0;
+
+    }
+    .small-sidebar a p{
+        display: block;
+        
+    }
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .large-container{
+        opacity: .6;
+        z-index: 0;
+    }
+    .search-box{
+        border: none;
+        border-radius: 50%;
+    }
+    .search-box img:hover{
+        background: #dddcdc;
+    }
+     .search-box input{
+        display: none;
+    }
+    .small-searchbox{
+        width: 200px;
+    }
+}
